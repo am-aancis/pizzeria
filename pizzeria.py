@@ -23,6 +23,8 @@ nombre del cliente, la pizza comprada, la cantidad y el total pagado.
 import os, time
 clean = 'clear'
 #clean = 'cls'
+Pizza = [nombre, codigo, tipo_de_masa, precio_u, stock]
+Pizzas = []
 
 menu = """
 +---------PIZZERIA EL PAPA YON---------+
@@ -40,7 +42,17 @@ while True:
     page = input("- ")
 
     if page == '1':
-        pass
+        os.system(clean)
+        Pizza[Nombre]= input("Nombre de la Pizza: ")
+        Pizza[codigo]= input("Código de la Pizza: ")
+        Pizza[tipo_de_masa]= input("Tipo de masa de la Pizza: ")
+        Pizza[precio_u]= input("Precio unitario de la Pizza: ")
+        Pizza[stock]= input("Stock disponible de la Pizza: ")
+        Pizzas.append(Pizza)
+        os.system(clean)
+        print("Listo!")
+        time.sleep(1.5)
+        
     elif page == '2':
         pass
     elif page == '3':
